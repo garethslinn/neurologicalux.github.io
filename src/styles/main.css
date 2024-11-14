@@ -145,7 +145,6 @@ ul li::marker {
 }
 
 .controls {
-    position: fixed;
     top: 1rem;
     right: 1rem;
     display: flex;
@@ -229,9 +228,6 @@ footer {
 
 /* Adjusting the image for smaller screens */
 @media (max-width: 700px) {
-    header h1 {
-        margin-top: 70px;
-    }
     .cover {
         width: 80%;
         margin: 1rem auto;
@@ -239,9 +235,6 @@ footer {
 }
 
 @media (max-width: 400px) {
-    header h1 {
-        margin-top: 200px;
-    }
     .cover {
         width: 100%;
         margin: 1rem auto;
