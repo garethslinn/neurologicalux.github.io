@@ -271,3 +271,20 @@ footer {
     position: absolute;
     top: -99999999px;
 }
+
+.download-button {
+    background-color: var(--color-primary);
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color var(--transition-speed);
+}
+
+.download-button:hover,
+.download-button:focus {
+    background-color: #21867a;
+    outline: none;
+}

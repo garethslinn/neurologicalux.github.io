@@ -20,7 +20,7 @@
     <h1>Neurological UX</h1>
     <h2>Designing for Neurological Inclusivity</h2>
 
-    <img class="cover" src="src/images/nux.jpg" alt="book cover for Neurological UX" />
+    <img class="cover" src="src/images/nux.jpg" alt="Book cover for Neurological UX" />
 </header>
 
 <main id="main-content">
@@ -62,7 +62,9 @@
                 wide spectrum of user needs without compromising on creativity.
             </li>
         </ul>
-        <a href="https://www.amazon.co.uk/dp/B0DN1NJSLZ/">  <span class="accessibility">external link</span>Buy Neurological UX</a>
+        <a href="https://www.amazon.co.uk/dp/B0DN1NJSLZ/">
+            <span class="accessibility">external link</span>Buy Neurological UX
+        </a>
 
     </section>
 
@@ -77,15 +79,8 @@
         </ul>
     </section>
 
-    <section>
-        <h3>About the Author</h3>
-        <p>
-            <strong>Gareth Slinn</strong> is a passionate advocate for accessibility in design. With years of experience, he has authored multiple books aimed at making the digital world more inclusive. His journey began with "<em>Accessibility by Example</em>" in 2007, focusing on developers. Recognising the evolving digital landscape, Gareth now dedicates his efforts to guiding designers and UX professionals in creating accessible experiences for all.
-        </p>
-    </section>
-
-    <section>
-        <a href="#download" class="sr-only">download</a>
+    <!-- Download Section with ID -->
+    <section id="download">
         <h3>A Message from Gareth</h3>
         <p>
             Thank you for your support. I'm pleased to share the first chapter
@@ -93,9 +88,12 @@
             with others.
         </p>
         <p>
-            📥
+
             <a href="NeuroLogicalUX_Chapter_1.pdf" download class="download-button" target="_blank" rel="noopener noreferrer">
-                Download "Neurological UX: Designing for Cognitive Diversity" Chapter 1 (PDF)
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="pdf-icon" viewBox="0 0 16 16" aria-hidden="true">
+                    <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V6.414A2 2 0 0 0 13.414 4L10 0.586A2 2 0 0 0 8.586 0H4zm5 1v3h3L9 1h0zM6 5h4v1H6V5zm0 2h4v1H6V7zm0 2h4v1H6V9zm0 2h4v1H6v-1z"/>
+                </svg>
+                Download "Neurological UX: Designing for Cognitive Diversity" Chapter 1
                 <span class="sr-only">, PDF file</span>
             </a>
         </p>
@@ -105,12 +103,15 @@
         <h3>Connect with Gareth</h3>
         <p>
             <strong>Website</strong>:
-            <a href="https://www.checkmeister.com">   <span class="accessibility">external link</span>Checkmeister.com</a> (formerly hermish.com)
+            <a href="https://www.checkmeister.com">
+                <span class="accessibility">external link</span>Checkmeister.com
+            </a> (formerly hermish.com)
         </p>
         <p>
             <strong>Connect on </strong>
-
-            <a href="https://www.linkedin.com/in/garethslinn/">   <span class="accessibility">external link</span>LinkedIn</a>
+            <a href="https://www.linkedin.com/in/garethslinn/">
+                <span class="accessibility">external link</span>LinkedIn
+            </a>
         </p>
         <p>
             <strong>Other Books by Gareth</strong>:
@@ -118,7 +119,7 @@
         <ul>
             <li>
                 <a href="https://www.amazon.co.uk/Accessibility-Dont-Panic-Gareth-Slinn/dp/B0DL4CSBS8/">
-                <span class="accessibility">external link</span>
+                    <span class="accessibility">external link</span>
                     Accessibility: Don’t Panic - Your Essential Guide to EAA and WCAG Compliance
                 </a>
             </li>
@@ -173,28 +174,28 @@
     const toggleThemeBtn = document.getElementById('toggle-theme');
 
     const sunIcon = `
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
-    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun">
-    <title>Sun icon depicting light mode</title>
-    <circle cx="12" cy="12" r="5" fill="currentColor"></circle>
-    <line x1="12" y1="1" x2="12" y2="3"></line>
-    <line x1="12" y1="21" x2="12" y2="23"></line>
-    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-    <line x1="1" y1="12" x2="3" y2="12"></line>
-    <line x1="21" y1="12" x2="23" y2="12"></line>
-    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-    </svg>
-    `;
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun">
+        <title>Sun icon depicting light mode</title>
+        <circle cx="12" cy="12" r="5" fill="currentColor"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        `;
 
     const moonIcon = `
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
-    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon">
-    <title>Moon icon depicting dark mode</title>
-    <path d="M21 12.79A9 9 0 1 1 11.21 3 A7 7 0 0 0 21 12.79z"></path>
-    </svg>
-    `;
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon">
+        <title>Moon icon depicting dark mode</title>
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 A7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        `;
 
     let currentTheme = localStorage.getItem('theme') || 'light';
     document.body.setAttribute('data-theme', currentTheme);
@@ -233,6 +234,31 @@
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
+        });
+    });
+
+    // Smooth Scroll and Focus Management for In-Page Links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const targetID = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetID);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Set focus to the target element for accessibility
+                targetElement.setAttribute('tabindex', '-1'); // Make it focusable
+                targetElement.focus();
+
+                // Remove the tabindex after focus to maintain natural tab order
+                targetElement.addEventListener('blur', function() {
+                    targetElement.removeAttribute('tabindex');
+                }, { once: true });
+            }
         });
     });
 </script>
