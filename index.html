@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neurological UX: Designing for Neurological Inclusivity</title>
+    <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body data-theme="light">
+
+<a href="#main-content" class="sr-only">Skip to main content</a>
+
+<aside class="controls" aria-label="Accessibility controls">
+    <button id="decrease-font" aria-label="Decrease text size">A-</button>
+    <button id="increase-font" aria-label="Increase text size">A+</button>
+    <button id="toggle-theme" aria-label="Toggle dark and light mode">🌙</button>
+</aside>
+
+<header>
+    <h1>Neurological UX</h1>
+    <h2>Designing for Neurological Inclusivity</h2>
+
+    <img src="src/images/nux.jpg" alt="book cover for Neurological UX" />
+</header>
+
+<main id="main-content">
+
+    <section>
+        <h3>About the Book</h3>
+        <p>Empower Every User. Design Beyond Limits.</p>
+        <p>
+            In today's digital era, creating accessible designs isn't just a best
+            practice, it's a necessity. "Neurological UX" is your comprehensive guide
+            to understanding and embracing the nuances of neurodiversity in user experience design.
+        </p>
+        <p>
+            Discover how to craft digital interfaces that are not only visually appealing but also genuinely
+            inclusive for users with neurological differences such as autism, ADHD, dyslexia, OCD, and
+            anxiety. This book moves beyond traditional accessibility guidelines, offering insights and
+            strategies tailored specifically for designers and UX professionals.
+        </p>
+        <h3>Inside, you'll explore</h3>
+        <ul>
+            <li>
+                <strong>Deep Dives into Neurodiversity:</strong> Understand how various neurological
+                dispositions affect user interaction and perception.
+            </li>
+            <li>
+                <strong>Beyond the Basics:</strong> Expand your knowledge past color contrasts and
+                scalable fonts to include cognitive accessibility considerations.
+            </li>
+            <li>
+                <strong>Practical Design Strategies:</strong> Learn from real-world examples and apply
+                evidence-based techniques to your projects.
+            </li>
+            <li>
+                <strong>Preparing for WCAG 3.0:</strong> Get ahead with insights aligned with upcoming
+                accessibility standards focusing on neurological aspects.
+            </li>
+            <li>
+                <strong>Flexible Frameworks:</strong> Implement adaptable best practices that cater to a
+                wide spectrum of user needs without compromising on creativity.
+            </li>
+        </ul>
+        <a href="https://www.amazon.co.uk/dp/B0DN1NJSLZ/">  <span class="accessibility">external link</span>Buy Neurological UX</a>
+
+    </section>
+
+    <section>
+        <h3>Key Features</h3>
+        <ul>
+            <li><strong>Understanding Neurodiversity</strong>: Dive deep into how neurological differences influence user interaction.</li>
+            <li><strong>Design Principles</strong>: Learn to craft interfaces that are both accessible and engaging.</li>
+            <li><strong>Practical Strategies</strong>: Implement techniques that make a tangible difference.</li>
+            <li><strong>Empathy-Driven Design</strong>: Foster a design mindset that values every user's experience.</li>
+            <li><strong>Comprehensive Coverage</strong>: From typography and colour themes to error prevention and focus-mode features.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>About the Author</h3>
+        <p>
+            <strong>Gareth Slinn</strong> is a passionate advocate for accessibility in design. With years of experience, he has authored multiple books aimed at making the digital world more inclusive. His journey began with "<em>Accessibility by Example</em>" in 2007, focusing on developers. Recognising the evolving digital landscape, Gareth now dedicates his efforts to guiding designers and UX professionals in creating accessible experiences for all.
+        </p>
+    </section>
+
+    <section>
+        <h3>A Message from Gareth</h3>
+        <p>
+            Thank you for your support. I'm pleased to share the first chapter
+            of my book in PDF format with you. Please feel free to share it
+            with others.
+        </p>
+        <p>
+            📥 <a href="NeuroLogicalUX_Chapter_1.pdf" target="_blank" class="download-button">Download "Neurological UX: Designing for Cognitive Diversity" Chapter 1 (PDF)</a>
+        </p>
+    </section>
+
+    <section>
+        <h3>Connect with Gareth</h3>
+        <p>
+            <strong>Website</strong>:
+            <a href="https://www.checkmeister.com">   <span class="accessibility">external link</span>Checkmeister.com</a> (formerly hermish.com)
+        </p>
+        <p>
+            <strong>Connect on </strong>
+
+            <a href="https://www.linkedin.com/in/garethslinn/">   <span class="accessibility">external link</span>LinkedIn</a>
+        </p>
+        <p>
+            <strong>Other Books by Gareth</strong>:
+        </p>
+        <ul>
+            <li>
+                <a href="https://www.amazon.co.uk/Accessibility-Dont-Panic-Gareth-Slinn/dp/B0DL4CSBS8/">
+                <span class="accessibility">external link</span>
+                    Accessibility: Don’t Panic - Your Essential Guide to EAA and WCAG Compliance
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.amazon.co.uk/Mental-Self-Defence-Critically-Confidently/dp/B0DM5FPSCN/">
+                    <span class="accessibility">external link</span>
+                    Mental Self Defence: Train Your Mind to Think Clearly, Critically, and Confidently
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.amazon.co.uk/Amazing-Creatures-Digital-made-EASY-ebook/dp/B00M9CUJOY/">
+                    <span class="accessibility">external link</span>
+                    Amazing Creatures: Digital art made EASY
+                </a>
+            </li>
+
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    &copy; 2024 Gareth Slinn. All rights reserved.
+</footer>
+
+<button id="back-to-top" aria-label="Back to Top">Back to top</button>
+
+<script>
+    // Font Size Adjustment
+    const increaseBtn = document.getElementById('increase-font');
+    const decreaseBtn = document.getElementById('decrease-font');
+    const root = document.documentElement;
+    let fontSize = 1;
+
+    increaseBtn.addEventListener('click', () => {
+        if (fontSize < 2) {
+            fontSize += 0.1;
+            root.style.setProperty('--font-size-base', `${fontSize}rem`);
+        }
+    });
+
+    decreaseBtn.addEventListener('click', () => {
+        if (fontSize > 0.8) {
+            fontSize -= 0.1;
+            root.style.setProperty('--font-size-base', `${fontSize}rem`);
+        }
+    });
+
+    // Theme Toggle
+    const toggleThemeBtn = document.getElementById('toggle-theme');
+
+    const sunIcon = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun">
+    <title>Sun icon depicting light mode</title>
+    <circle cx="12" cy="12" r="5" fill="currentColor"></circle>
+    <line x1="12" y1="1" x2="12" y2="3"></line>
+    <line x1="12" y1="21" x2="12" y2="23"></line>
+    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+    <line x1="1" y1="12" x2="3" y2="12"></line>
+    <line x1="21" y1="12" x2="23" y2="12"></line>
+    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+    `;
+
+    const moonIcon = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon">
+    <title>Moon icon depicting dark mode</title>
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 A7 7 0 0 0 21 12.79z"></path>
+    </svg>
+    `;
+
+    let currentTheme = localStorage.getItem('theme') || 'light';
+    document.body.setAttribute('data-theme', currentTheme);
+    updateToggleIcon(currentTheme);
+
+    toggleThemeBtn.addEventListener('click', () => {
+        let theme = document.body.getAttribute('data-theme');
+        theme = theme === 'light' ? 'dark' : 'light';
+        document.body.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        updateToggleIcon(theme);
+    });
+
+    function updateToggleIcon(theme) {
+        if (theme === 'light') {
+            toggleThemeBtn.innerHTML = moonIcon;
+            toggleThemeBtn.setAttribute('aria-label', 'Switch to Dark Mode');
+        } else {
+            toggleThemeBtn.innerHTML = sunIcon;
+            toggleThemeBtn.setAttribute('aria-label', 'Switch to Light Mode');
+        }
+    }
+
+    // Back to Top Button Functionality
+    const backToTopBtn = document.getElementById('back-to-top');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) {
+            backToTopBtn.classList.add('show');
+        } else {
+            backToTopBtn.classList.remove('show');
+        }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+</body>
+</html>
