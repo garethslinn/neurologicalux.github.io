@@ -32,6 +32,7 @@
     --ul-bg-color: var(--color-accent-dark);
     --btp-color: var(--color-accent-light);
     --btp-fg-color: var(--color-accent-dark);
+    --book-title: var(--color-text-dark)
 }
 
 [data-theme="light"] {
@@ -44,6 +45,7 @@
     --ul-bg-color: var(--color-accent-light);
     --btp-color: var(--color-accent-dark);
     --btp-fg-color: var(--color-accent-light);
+    --book-title: var(--color-text-light)
 }
 
 body {
@@ -334,3 +336,24 @@ footer {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.borders {
+    text-decoration: none;
+    img {
+        margin-bottom: 10px;
+        border: 2px solid white;
+        display: block;
+    }
+    img:hover,
+    img:focus {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    span  {
+        color: var(--book-title);
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
+
